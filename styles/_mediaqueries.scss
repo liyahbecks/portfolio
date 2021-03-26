@@ -1,0 +1,9 @@
+@media (max-width: 991px) {
+    .scrollContainer {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        transform: none !important;
+    }
+}

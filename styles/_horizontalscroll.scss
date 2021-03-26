@@ -1,0 +1,21 @@
+.scrollContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+section {
+
+    min-width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    // border: 2px solid $offwhite;
+    // border-top: none;
+    // border-bottom: none;
+
+}

@@ -1,0 +1,217 @@
+@import "snippet";
+@import "header";
+@import "variables";
+@import "horizontalscroll";
+@import "mediaqueries";
+@import "animations";
+
+// font-family: nimbus-sans, sans-serif;
+// font-weight: 900;
+// font-style: normal;
+
+// font-family: nimbus-sans-extended, sans-serif;
+// font-weight: 900;
+// font-style: normal;
+
+// font-family: anton, sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+// font-family: termina, sans-serif;
+// font-weight: 800;
+// font-style: normal;
+
+// font-family: roboto, sans-serif;
+// font-weight: 500;
+// font-style: normal;
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+
+.wrapper {
+    width:90%;
+    margin: 0 auto;
+    max-width:1200px;
+  }
+
+body {
+    background-color: #141414 ;
+    @include bodyProps;
+ 
+}
+
+
+section {
+    min-height: 100vh;
+    border-bottom: 2px solid $offwhite;
+}
+
+section h2 {
+    @include headingProps;
+    @include outline;
+    text-align: center;
+    font-size: 2.5rem;  
+    
+}
+
+.aboutText {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.aboutText img {
+    width: 100%;
+    padding-left: 178px;
+}
+
+.aboutME {
+    text-align: right;
+}
+
+
+.spacer {
+    height: 10vh;
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    row-gap: 50px;
+    list-style: none;
+    text-align: center;
+    
+}
+
+.skillsSpacer {
+    height: 20vh;
+}
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    list-style: none;
+    text-align: center;
+    
+
+}
+
+.ProjectName {
+    position: relative;
+  height: 200px;
+  width: 257px;
+  display: flex;
+}
+
+
+.extra { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+  
+}
+
+.ProjectName h3:hover {
+    @include removeOutline;
+}
+
+.ProjectName img {
+    width: 100%;
+}
+// .ProjectName:hover .extra {
+//     visibility: visible;
+//     opacity: 1;
+//   }
+
+// .ProjectName:hover .placeImage {
+//     visibility: hidden;
+// }
+
+i {
+    font-size: 50px;
+    color: $offwhite;
+}
+
+h3 {
+    @include headingProps;
+    @include outline;
+    text-transform: uppercase;
+}
+
+.projectGrid {
+    text-align: center;
+}
+
+
+.class {
+    text-align: left;
+
+}
+//form
+
+input {
+    width: 366px;
+    background-color: #2F2F2F;
+    border-style: none;
+    color: #424242;
+    padding: 15px;
+
+}
+
+textarea {
+    background-color: #2F2F2F;
+    border-style: none;
+    resize: none;
+    color: #424242;
+    padding: 15px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #424242   ;
+    letter-spacing: 2px;
+    @include bodyProps;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+button {
+    background-color: #1482A4;
+	@include bodyProps;
+	color:$offwhite;
+    text-decoration: none;
+    border-style: none;
+    padding: 44px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    width: 20%;
+    height: 100%;
+    clip-path: circle(50% at 50% 50%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    @include bodyProps;
+    line-height: 25px; 
+}
+
+.userInformation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contactSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
