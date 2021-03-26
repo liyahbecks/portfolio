@@ -247,7 +247,7 @@ form {
 .contactCopy {
     margin: 0;
     font-family: 'roboto',sans-serif;
-font-weight: 300;
+font-weight: 500;
 font-style: normal;
 color:$offwhite;
 }
@@ -257,10 +257,14 @@ color:$offwhite;
     padding-right: 20px;
 }
 
+.contactHeading {
+    text-transform: uppercase;
+}
+
 .contactLink {
     text-decoration: none;
     font-family: 'roboto',sans-serif;
-font-weight: 300;
+font-weight: 500;
 font-style: normal;
 color: $offwhite;
     
