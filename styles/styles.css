@@ -601,7 +601,6 @@ body {
 
 section {
   min-height: 100vh;
-  border-bottom: 2px solid #E7E0DC;
   min-width: 100vw;
 }
 
@@ -742,7 +741,6 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   font-weight: 500;
   font-style: normal;
   font-size: 1rem;
-  text-transform: uppercase;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
@@ -753,7 +751,6 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-weight: 500;
   font-style: normal;
   font-size: 1rem;
-  text-transform: uppercase;
 }
 
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
@@ -764,7 +761,6 @@ input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   font-weight: 500;
   font-style: normal;
   font-size: 1rem;
-  text-transform: uppercase;
 }
 
 input::placeholder, textarea::placeholder {
@@ -775,7 +771,6 @@ input::placeholder, textarea::placeholder {
   font-weight: 500;
   font-style: normal;
   font-size: 1rem;
-  text-transform: uppercase;
 }
 
 button {
@@ -794,7 +789,6 @@ button {
   height: 42%;
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
-  padding: 17px;
 }
 
 form {
@@ -833,5 +827,58 @@ form {
 
 .contact {
   margin-bottom: 50px;
+}
+
+.contactCopy {
+  margin: 0;
+  font-family: 'roboto',sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.socials i {
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+@media (max-width: 950px) {
+  form {
+    width: 400px;
+  }
+  input {
+    width: 165px;
+  }
+  button {
+    height: 23%;
+  }
+}
+
+@media (max-width: 650px) {
+  .top-anime {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .result {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  input {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+  .result-text {
+    text-align: center;
+  }
+  .anime-synopsis {
+    text-align: justify;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

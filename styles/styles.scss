@@ -25,6 +25,8 @@
 // font-weight: 500;
 // font-style: normal;
 
+
+
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 
@@ -44,7 +46,6 @@ body {
 
 section {
     min-height: 100vh;
-    border-bottom: 2px solid $offwhite;
     min-width: 100vw;
 }
 
@@ -180,7 +181,7 @@ input::placeholder, textarea::placeholder {
     letter-spacing: 2px;
     @include bodyProps;
     font-size: 1rem;
-    text-transform: uppercase;
+    
   }
 
 button {
@@ -195,7 +196,6 @@ button {
     width: 20%;
     height: 42%;
     clip-path: circle(50% at 50% 50%);
-    padding: 17px;
 }
 
 form {
@@ -225,3 +225,60 @@ form {
 .contact {
     margin-bottom: 50px;
 }
+
+.contactCopy {
+    margin: 0;
+    font-family: 'roboto',sans-serif;
+font-weight: 200;
+font-style: normal;
+}
+
+.socials i {
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+//Media queries
+
+@media (max-width: 950px) {
+  
+    form {
+        width: 400px;
+    }
+    input {
+
+        width: 165px;
+
+    }
+  
+    button {
+        height: 23%;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .top-anime {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    
+   
+  }
+  @media (max-width: 500px) {
+  
+    .result {
+      display: flex;
+      flex-direction: column;
+    }
+    input {
+      width: 70%;
+      font-size:1.5rem;
+    }
+  
+    .result-text {
+      text-align: center;
+    }
+    .anime-synopsis {
+      text-align: justify;
+    }
+  
+  }
