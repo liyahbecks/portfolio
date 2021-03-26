@@ -782,13 +782,14 @@ button {
   color: #E7E0DC;
   text-decoration: none;
   border-style: none;
-  padding: 17px;
+  padding: 10px;
   text-transform: uppercase;
   margin-top: 20px;
   width: 20%;
-  height: 42%;
+  height: 50%;
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
+  margin: 10px 40%;
 }
 
 form {
@@ -839,6 +840,14 @@ form {
 .socials i {
   font-size: 30px;
   padding-right: 20px;
+}
+
+.contactLink {
+  text-decoration: none;
+  font-family: 'roboto',sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #E7E0DC;
 }
 
 @media (max-width: 950px) {
