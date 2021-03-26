@@ -153,7 +153,7 @@ i {
 
 h3 {
     @include headingProps;
-    @include outline;
+    // @include outline;
     text-transform: uppercase;
 }
 
@@ -165,6 +165,14 @@ h3 {
 .class {
     text-align: left;
 
+}
+
+.ProjectName p {
+    text-align: left;
+}
+
+.ProjectName {
+    text-align: left;
 }
 //form
 

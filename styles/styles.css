@@ -717,9 +717,6 @@ h3 {
   font-style: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #E7E0DC;
   text-transform: uppercase;
 }
 
@@ -728,6 +725,14 @@ h3 {
 }
 
 .class {
+  text-align: left;
+}
+
+.ProjectName p {
+  text-align: left;
+}
+
+.ProjectName {
   text-align: left;
 }
 
