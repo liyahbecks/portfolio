@@ -84,11 +84,12 @@ section h2 {
     row-gap: 50px;
     list-style: none;
     text-align: center;
+    margin: 0;
     
 }
 
 .skillsSpacer {
-    height: 20vh;
+    height: 210px;
 }
 .projectGrid {
     display: grid;
@@ -105,8 +106,12 @@ section h2 {
 //   height: 200px;
 //   width: 257px;
   display: flex;
+  margin: 10px;
 }
 
+.ProjectName div {
+    padding-left: 20px;
+}
 
 .extra { 
     position: absolute;
@@ -137,6 +142,10 @@ section h2 {
 //     visibility: hidden;
 // }
 
+.ProjectName a {
+    text-decoration: none;
+    @include bodyProps;
+}
 i {
     font-size: 50px;
     color: $offwhite;
