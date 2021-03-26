@@ -45,12 +45,13 @@ body {
 section {
     min-height: 100vh;
     border-bottom: 2px solid $offwhite;
+    min-width: 100vw;
 }
 
 section h2 {
     @include headingProps;
     @include outline;
-    text-align: left;
+    text-align: center;
     font-size: 2.5rem;  
     
 }
