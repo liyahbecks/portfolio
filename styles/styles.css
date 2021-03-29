@@ -581,6 +581,7 @@ body {
   font-family: 'roboto', sans-serif;
   font-weight: 500;
   font-style: normal;
+  overflow: hidden;
 }
 
 p {
@@ -879,15 +880,5 @@ form {
 
 .captcha {
   margin-top: 20px;
-}
-
-.rc-anchor .rc-anchor-normal .rc-anchor-light {
-  background-color: #424242;
-  color: #E7E0DC;
-  border: none;
-}
-
-.rc-anchor-light .rc-anchor-logo-text, .rc-anchor-light div a:link, .rc-anchor-light div a:visited {
-  color: #E7E0DC;
 }
 /*# sourceMappingURL=styles.css.map */
