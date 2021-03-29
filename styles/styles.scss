@@ -1,41 +1,9 @@
 @import "snippet";
-@import "header";
 @import "variables";
-@import "horizontalscroll";
-@import "mediaqueries";
+@import "header";
 @import "animations";
 
-// font-family: nimbus-sans, sans-serif;
-// font-weight: 900;
-// font-style: normal;
-
-// font-family: nimbus-sans-extended, sans-serif;
-// font-weight: 900;
-// font-style: normal;
-
-// font-family: anton, sans-serif;
-// font-weight: 400;
-// font-style: normal;
-
-// font-family: termina, sans-serif;
-// font-weight: 800;
-// font-style: normal;
-
-// font-family: roboto, sans-serif;
-// font-weight: 500;
-// font-style: normal;
-
-
-
-.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
-
-
-
-.wrapper {
-    width:90%;
-    margin: 0 auto;
-    max-width:1200px;
-  }
+//GENERAL STYLING
 
 body {
     background-color: #141414 ;
@@ -43,39 +11,64 @@ body {
  
 }
 
-
-section {
-    height: 100vh;
-    min-width: 100vw;
+p {
+    font-size: 18px;
+    line-height: 1.6;
 }
+
+
+//WELCOME PAGE
+
+h1 span {
+    @include outline;
+}
+
+
+.test4 {
+@include headingProps;
+font-size: 3.5rem;
+color: $offwhite;
+
+    }
+
+
+.homeSpacer {
+    height: 40vh
+
+}
+
+.spacer {
+    height: 10vh;
+}
+
+//ABOUT PAGE
 
 section h2 {
     @include headingProps;
     @include outline;
-    text-align: center;
+    text-align: left;
     font-size: 2.5rem;  
     
 }
 
 .aboutText {
-    display: flex;
-    justify-content: space-between;
+    @include grid;
     
 }
 
-.aboutText img {
-    width: 50%;
-    padding-left: 178px;
+.aboutText img{
+
+    width: 100%;
+    object-fit: cover;
+    grid-column-start: 2;
 }
 
 .aboutME {
     text-align: right;
+    grid-column-start: 3;
 }
 
-
-.spacer {
-    height: 10vh;
-}
+//SKILLS
 
 .skills ul {
     display: grid;
@@ -88,229 +81,68 @@ section h2 {
     
 }
 
-.skillsSpacer {
-    height: 210px;
-}
-.projectGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    list-style: none;
-    text-align: center;
-    
-
-}
-
-.ProjectName {
-//     position: relative;
-//   height: 200px;
-//   width: 257px;
-  display: flex;
-  margin: 10px;
-}
-
-.ProjectName div {
-    padding-left: 20px;
-}
-
-.extra { 
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(29, 106, 154, 0.72);
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-  
-}
-
-.ProjectName h3:hover {
-    @include removeOutline;
-}
-
-.ProjectName img {
-    width: 100%;
-}
-// .ProjectName:hover .extra {
-//     visibility: visible;
-//     opacity: 1;
-//   }
-
-// .ProjectName:hover .placeImage {
-//     visibility: hidden;
-// }
-
-.ProjectName a {
-    text-decoration: none;
-    @include bodyProps;
-}
 i {
     font-size: 50px;
     color: $offwhite;
 }
 
+//PROJECTS
+
 h3 {
     @include headingProps;
-    // @include outline;
-    text-transform: uppercase;
+    @include outline;
+    font-size: 1.75rem;
 }
 
 .projectGrid {
-    text-align: center;
-}
-
-
-.class {
-    text-align: left;
-
-}
-
-.ProjectName p {
-    text-align: left;
+    display:grid;
+    grid-template-columns: repeat(2, 720px);
+    column-gap: 50px;
 }
 
 .ProjectName {
-    text-align: left;
-}
-//form
-
-input {
-    width: 366px;
-    background-color: #2F2F2F;
-    border-style: none;
-    color: #424242;
-    padding: 15px;
-
+    text-align: center;
 }
 
-textarea {
-    background-color: #2F2F2F;
-    border-style: none;
-    resize: none;
-    color: #424242;
-    padding: 15px;
-}
-
-input::placeholder, textarea::placeholder {
-    color: #424242   ;
-    letter-spacing: 2px;
-    @include bodyProps;
-    font-size: 1rem;
+.extra { 
     
-  }
-
-button {
-    background-color: #1482A4;
-	@include bodyProps;
-	color:$offwhite;
-    text-decoration: none;
-    border-style: none;
-    padding: 10px;
-    text-transform: uppercase;
-    margin-top: 20px;
-    width: 20%;
-    height: 50%;
-    clip-path: circle(50% at 50% 50%);
-    margin: 10px 40%;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    @include bodyProps;
-    line-height: 25px; 
-}
-
-.userInformation {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.contactSection {
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    display: none;
+    opacity: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-}
-
-// .contactCopy {
-//     width: 40%
-// }
-
-.contact {
-    margin-bottom: 50px;
-}
-
-.contactCopy {
-    margin: 0;
-    font-family: 'roboto',sans-serif;
-font-weight: 500;
-font-style: normal;
-color:$offwhite;
-}
-
-.socials i {
-    font-size: 30px;
-    padding-right: 20px;
-}
-
-.contactHeading {
-    text-transform: uppercase;
-}
-
-.contactLink {
-    text-decoration: none;
-    font-family: 'roboto',sans-serif;
-font-weight: 500;
-font-style: normal;
-color: $offwhite;
+    grid-template-columns: 300px 300px;
+    gap: 60px;
+    text-align: right;
     
 }
 
-//Media queries
+.projectText p {
+    margin-left: 20px;
+}
 
-@media (max-width: 950px) {
-  
-    form {
-        width: 400px;
-    }
-    input {
 
-        width: 165px;
+.ProjectName:hover h3 {
+    @include removeOutline;
+}
 
-    }
-  
-    button {
-        height: 23%;
-    }
+.ProjectName:hover .extra {
+    visibility: visible;
+    opacity: 1;
+    background-color: transparent;
+
   }
-  
-  @media (max-width: 650px) {
-    .top-anime {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    
-   
+
+.projectGrid .initialIMG {
+      width: 50%;
+      object-fit: cover;
   }
-  @media (max-width: 500px) {
-  
-    .result {
-      display: flex;
-      flex-direction: column;
-    }
-    input {
-      width: 70%;
-      font-size:1.5rem;
-    }
-  
-    .result-text {
-      text-align: center;
-    }
-    .anime-synopsis {
-      text-align: justify;
-    }
-  
+
+  .ProjectName:hover .initialIMG {
+      display: none;
+  }
+
+  .hoverIMG {
+      width: 100%;
+      object-fit: contain;
   }

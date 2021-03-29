@@ -31,4 +31,13 @@ text-transform: uppercase;
 //COLOURS
 $offwhite: #E7E0DC;
 
-//
+//GRID
+
+@mixin grid {
+    display:grid;
+    grid-template-columns: repeat(2, 360px);
+    column-gap: 60px;
+
+}
+
+
