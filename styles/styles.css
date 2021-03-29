@@ -219,7 +219,7 @@ template {
 .wrapper {
   width: 90%;
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1200px;
 }
 
 .headerBar {
@@ -629,8 +629,8 @@ section h2 {
 .aboutText {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (360px)[2];
-      grid-template-columns: repeat(2, 360px);
+  -ms-grid-columns: 360px 200px 360px;
+      grid-template-columns: 360px 200px 360px;
   -webkit-column-gap: 60px;
           column-gap: 60px;
 }
@@ -639,12 +639,13 @@ section h2 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  margin-left: 200px;
 }
 
 .aboutME {
-  text-align: right;
+  text-align: left;
   -ms-grid-column: 3;
       grid-column-start: 3;
 }
