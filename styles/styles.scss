@@ -111,11 +111,21 @@ h3 {
     display: none;
     opacity: 0;
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 350px 300px;
     gap: 60px;
     text-align: right;
     
 }
+
+.extra a {
+    text-decoration: none;
+    color: $offwhite;
+}
+
+.extra a:hover {
+    border-bottom: 2px solid $offwhite;
+}
+
 
 .projectText p {
     margin-left: 20px;
@@ -146,3 +156,98 @@ h3 {
       width: 100%;
       object-fit: contain;
   }
+
+  //CONTACT
+
+  input {
+    width: 366px;
+    background-color: #2F2F2F;
+    border-style: none;
+    color: #424242;
+    padding: 15px;
+
+}
+
+textarea {
+    background-color: #2F2F2F;
+    border-style: none;
+    resize: none;
+    color: #424242;
+    padding: 15px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #424242   ;
+    letter-spacing: 2px;
+    @include bodyProps;
+    font-size: 1rem;
+    
+  }
+
+button {
+    background-color: #1482A4;
+	@include bodyProps;
+	color:$offwhite;
+    text-decoration: none;
+    border-style: none;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-top:20px;
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    @include bodyProps;
+    line-height: 25px; 
+}
+
+.userInformation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contactSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+.contact {
+    margin-bottom: 50px;
+}
+
+.contactCopy {
+    margin: 0;
+    font-family: 'roboto',sans-serif;
+font-weight: 500;
+font-style: normal;
+color:$offwhite;
+}
+
+.socials i {
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+.contactHeading {
+    text-transform: uppercase;
+}
+
+.contactLink {
+    text-decoration: none;
+    font-family: 'roboto',sans-serif;
+font-weight: 500;
+font-style: normal;
+color: $offwhite;
+    
+}
+
+.captcha {
+    margin-top: 20px;
+}
