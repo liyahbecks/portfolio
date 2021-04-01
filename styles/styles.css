@@ -675,9 +675,10 @@ h3 {
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #E7E0DC;
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 
 .projectGrid {
@@ -746,8 +747,8 @@ h3 {
 
 .hoverIMG {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .projectLinks {
