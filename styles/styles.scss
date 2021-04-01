@@ -8,7 +8,6 @@
 body {
     background-color: #141414 ;
     @include bodyProps;
-    overflow: hidden;
  
 }
 
@@ -48,14 +47,13 @@ section h2 {
     @include headingProps;
     @include outline;
     text-align: left;
-    font-size: 2.5rem;  
+    font-size: 3rem;  
+    margin-bottom: 0;
     
 }
 
 .aboutText {
-    display:grid;
-    grid-template-columns: 360px 200px 360px;
-    column-gap: 60px;
+    @include grid;
     
 }
 
@@ -64,12 +62,12 @@ section h2 {
     width: 100%;
     object-fit: cover;
     grid-column-start: 1;
-    margin-left: 200px;
+    
 }
 
 .aboutME {
     text-align: left;
-    grid-column-start: 3;
+    
 }
 
 //SKILLS
@@ -96,12 +94,17 @@ h3 {
     @include headingProps;
     @include outline;
     font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 5px;
 }
+
+
 
 .projectGrid {
     display:grid;
-    grid-template-columns: repeat(2, 720px);
+    grid-template-columns: repeat(2, 600px);
     column-gap: 50px;
+    align-items: left;
 }
 
 .ProjectName {
@@ -113,17 +116,15 @@ h3 {
     background: rgba(29, 106, 154, 0.72);
     color: #fff;
     display: none;
-    opacity: 0;
-    display: grid;
-    grid-template-columns: 350px 300px;
-    gap: 60px;
-    text-align: right;
+   
+
     
 }
 
 .extra a {
     text-decoration: none;
     color: $offwhite;
+    font-size: 18px;
 }
 
 .extra a:hover {
@@ -133,6 +134,7 @@ h3 {
 
 .projectText p {
     margin-left: 20px;
+    margin-top: 0;
 }
 
 
@@ -141,9 +143,13 @@ h3 {
 }
 
 .ProjectName:hover .extra {
-    visibility: visible;
-    opacity: 1;
+    
     background-color: transparent;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: 300px 250px;
+    gap: 40px;
+    text-align: left;
 
   }
 
@@ -158,7 +164,16 @@ h3 {
 
   .hoverIMG {
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
+  }
+
+  .projectLinks {
+      text-align: left;
+  }
+
+  .projectText p {
+      margin-left: 0;
+      margin-top: 30px;
   }
 
   //CONTACT
@@ -167,7 +182,7 @@ h3 {
     width: 366px;
     background-color: #2F2F2F;
     border-style: none;
-    color: #424242;
+    color: $offwhite;
     padding: 15px;
 
 }
@@ -176,7 +191,7 @@ textarea {
     background-color: #2F2F2F;
     border-style: none;
     resize: none;
-    color: #424242;
+    color: $offwhite;
     padding: 15px;
 }
 
@@ -184,6 +199,7 @@ input::placeholder, textarea::placeholder {
     color: #424242   ;
     letter-spacing: 2px;
     @include bodyProps;
+    font-weight: 500;
     font-size: 1rem;
     
   }
@@ -191,6 +207,7 @@ input::placeholder, textarea::placeholder {
 button {
     background-color: #1482A4;
 	@include bodyProps;
+    font-weight: 500;
 	color:$offwhite;
     text-decoration: none;
     border-style: none;
@@ -228,10 +245,8 @@ form {
 
 .contactCopy {
     margin: 0;
-    font-family: 'roboto',sans-serif;
-font-weight: 500;
-font-style: normal;
-color:$offwhite;
+    @include bodyProps;
+
 }
 
 .socials i {
@@ -245,11 +260,7 @@ color:$offwhite;
 
 .contactLink {
     text-decoration: none;
-    font-family: 'roboto',sans-serif;
-font-weight: 500;
-font-style: normal;
-color: $offwhite;
-    
+    @include bodyProps;
 }
 
 .captcha {

@@ -9,6 +9,8 @@
 .logo {
     @include bodyProps;
     text-transform: uppercase;
+    font-weight: 500;
+ 
 }
 
 nav ul {
@@ -26,6 +28,7 @@ nav li {
 
 nav a {
     @include bodyProps;
+    font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
 
