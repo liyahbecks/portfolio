@@ -14,8 +14,9 @@ body {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
+    margin-top: 0;
 }
 
 
@@ -40,7 +41,7 @@ color: $offwhite;
 }
 
 .spacer {
-    height: 10vh;
+    height: 5vh;
 }
 
 //ABOUT PAGE
@@ -55,14 +56,16 @@ section h2 {
 }
 
 .aboutText {
-    @include grid;
+    display:grid;
+    grid-template-columns: 360px 600px;
+    column-gap: 60px;
     
 }
 
 .aboutText img{
 
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     grid-column-start: 1;
     
 }
@@ -72,6 +75,10 @@ section h2 {
     
 }
 
+.sillyIntro {
+    font-style: italic;
+
+}
 //SKILLS
 
 .skills ul {
@@ -128,7 +135,7 @@ h3 {
 .extra a {
     text-decoration: none;
     color: $offwhite;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .extra a:hover {
@@ -262,6 +269,8 @@ form {
 
 .contactHeading {
     text-transform: uppercase;
+    font-weight: 500;
+    margin: 10px 0;
 }
 
 .contactLink {

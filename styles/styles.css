@@ -637,8 +637,9 @@ body {
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
+  margin-top: 0;
 }
 
 h1 span {
@@ -662,7 +663,7 @@ h1 span {
 }
 
 .spacer {
-  height: 10vh;
+  height: 5vh;
 }
 
 section h2 {
@@ -682,22 +683,26 @@ section h2 {
 .aboutText {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (360px)[2];
-      grid-template-columns: repeat(2, 360px);
+  -ms-grid-columns: 360px 600px;
+      grid-template-columns: 360px 600px;
   -webkit-column-gap: 60px;
           column-gap: 60px;
 }
 
 .aboutText img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -ms-grid-column: 1;
       grid-column-start: 1;
 }
 
 .aboutME {
   text-align: left;
+}
+
+.sillyIntro {
+  font-style: italic;
 }
 
 .skills ul {
@@ -757,7 +762,7 @@ h3 {
 .extra a {
   text-decoration: none;
   color: #E7E0DC;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .extra a:hover {
@@ -939,6 +944,8 @@ form {
 
 .contactHeading {
   text-transform: uppercase;
+  font-weight: 500;
+  margin: 10px 0;
 }
 
 .contactLink {
