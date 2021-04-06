@@ -1111,15 +1111,6 @@ button:hover {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
-  .projectGrid .initialIMG {
-    display: none;
-  }
-  .projectGrid .extra {
-    display: -ms-grid;
-    display: grid;
-    background-color: transparent;
-    text-align: left;
-  }
   h3 {
     margin-top: 20px;
   }
@@ -1190,14 +1181,6 @@ button:hover {
 }
 
 @media (max-width: 450px) {
-  .projectGrid .initialIMG {
-    display: none;
-  }
-  .projectGrid .extra {
-    margin: 0 auto;
-    background-color: transparent;
-    text-align: left;
-  }
   .projectText p {
     margin: 0;
   }
@@ -1211,15 +1194,6 @@ button:hover {
   .projectGrid {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-  }
-  .projectGrid .extra {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    margin: 0 auto;
-    background-color: transparent;
-    text-align: left;
   }
 }
 
@@ -1250,10 +1224,6 @@ button:hover {
   }
   .projectGrid .initialIMG {
     width: 100%;
-  }
-  .ProjectName:hover .extra {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
   }
   form {
     width: 300px;

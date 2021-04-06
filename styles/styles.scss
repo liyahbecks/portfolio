@@ -413,15 +413,15 @@ button:hover {
             grid-template-columns: repeat(3, 1fr);
         }
 
-        .projectGrid .initialIMG {
-            display:none;
-        }
+        // .projectGrid .initialIMG {
+        //     display:none;
+        // }
         
-        .projectGrid .extra {
-            display: grid;
-            background-color: transparent;
-            text-align: left;
-        }
+        // .projectGrid .extra {
+        //     display: grid;
+        //     background-color: transparent;
+        //     text-align: left;
+        // }
 
         h3 {
             margin-top: 20px;
@@ -510,17 +510,17 @@ button:hover {
 
 @media (max-width: 450px) {
 //PROJECTS
-.projectGrid .initialIMG {
-    display:none;
-}
+// .projectGrid .initialIMG {
+//     display:none;
+// }
 
-.projectGrid .extra {
-    // display: grid;
-    // grid-template-columns: repeat(1, 1fr);
-    margin: 0 auto;
-    background-color: transparent;
-    text-align: left;
-}
+// .projectGrid .extra {
+//     // display: grid;
+//     // grid-template-columns: repeat(1, 1fr);
+//     margin: 0 auto;
+//     background-color: transparent;
+//     text-align: left;
+// }
 
 .projectText p {
     margin: 0;
@@ -541,13 +541,13 @@ h3 {
     }
 
 
-    .projectGrid .extra {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin: 0 auto;
-        background-color: transparent;
-        text-align: left;
-    }
+    // .projectGrid .extra {
+    //     display: grid;
+    //     grid-template-columns: repeat(1, 1fr);
+    //     margin: 0 auto;
+    //     background-color: transparent;
+    //     text-align: left;
+    // }
     
 }
 
@@ -598,9 +598,9 @@ h3 {
             width: 100%;
         }
         
-        .ProjectName:hover .extra {
-            grid-template-columns: repeat(1, 1fr);
-        }
+        // .ProjectName:hover .extra {
+        //     grid-template-columns: repeat(1, 1fr);
+        // }
     //CONTACT
     
         // .spacer {
