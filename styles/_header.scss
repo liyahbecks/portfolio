@@ -39,4 +39,48 @@ nav a:hover {
     border-bottom: 2px solid $offwhite;
 }
 
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
 
+nav .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width: 800px) {
+    nav .navBar {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background:#424242  ;
+        transition: top 2s ease;
+        display: none;
+        font-size: 2rem;
+
+    }
+
+    nav .navBar .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+        text-align: right;
+        color: $offwhite;
+        font-size: 2rem;
+    }
+}

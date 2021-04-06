@@ -267,6 +267,57 @@ nav a:hover {
   border-bottom: 2px solid #E7E0DC;
 }
 
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .closeMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  nav .navBar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #424242;
+    -webkit-transition: top 2s ease;
+    transition: top 2s ease;
+    display: none;
+    font-size: 2rem;
+  }
+  nav .navBar .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+    text-align: right;
+    color: #E7E0DC;
+    font-size: 2rem;
+  }
+}
+
 .text-flicker-in-glow {
   -webkit-animation: text-flicker-in-glow 4s linear forwards;
   animation: text-flicker-in-glow 4s linear forwards;
@@ -888,6 +939,7 @@ button {
   padding: 10px;
   text-transform: uppercase;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 form {
@@ -1211,12 +1263,6 @@ button:hover {
   }
   .navBar {
     display: none;
-  }
-  .userInformation {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   .contactSection {
     -ms-grid-columns: (1fr)[1];
