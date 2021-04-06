@@ -9,7 +9,6 @@
 body {
     background-color: #141414 ;
     @include bodyProps;
-    overflow: hidden;
  
 }
 
@@ -29,7 +28,7 @@ h1 span {
 
 .test4 {
 @include headingProps;
-font-size: 3.5rem;
+font-size: 4rem;
 color: $offwhite;
 
     }
@@ -239,6 +238,10 @@ form {
     line-height: 25px; 
 }
 
+button:hover {
+    border: 2px solid $offwhite;
+}
+
 .userInformation {
     display: flex;
     justify-content: space-between;
@@ -282,97 +285,278 @@ form {
     margin-top: 20px;
 }
 
+
 //MEDIA QUERIES
 
-@media (max-width: 320px) {
+@media (max-width: 1024px) {
+    //CONTACT
 
-//HEADER
-
-    .test4 {
-       font-size: 2.5rem; 
-    }
-
-    section h2 {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-
-//ABOUT
-    .aboutText {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .aboutME {
-        text-align: center;
-    }
-//SKILLS
-    .skills ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-//PROJECTS
-
-    h3 {
-        font-size: 1.5rem;
-        
-    }
-
-    .projectGrid {
-        grid-template-columns: repeat(1, 300px);
-    }
-
-    .projectGrid .initialIMG {
-        width: 100%;
-    }
-    
-    .ProjectName:hover .extra {
-        grid-template-columns: repeat(1, 1fr);
-    }
-//CONTACT
-
-    // .spacer {
-    //     display: none;
-    // }
     form {
-        width: 300px;
-    }
-
-    input {
-        width: 270px;
-        margin-top: 20px;
-    }
-
-    .navBar {
-        display: none;
-    }
-
-    .userInformation { 
-        flex-direction: column;
+        margin: 0 auto;
     }
 
     .contactSection {
         grid-template-columns: repeat(1, 1fr);
     }
-
-    .social-contact {
-        text-align: center;
-    }
-    .socials {
-        text-align: center;
-    }
-    
-   
   }
 
 
-  @media (max-width: 375px) {
+
+  @media (max-width: 910px) {
+
+    //HEADER
+    
+        // .test4 {
+        //    font-size: 2.5rem; 
+        // }
+
+        .test4 {
+            font-size: 4rem;
+        }
+    
+       section h2 {
+           text-align: center;
+           margin-bottom: 10px;
+       }
+    
+    //ABOUT
+        .aboutText {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .sillyIntro {
+            text-align: center;
+        }
+    //SKILLS
+        .skills ul {
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 auto;
+        }
+    
+    //PROJECTS
+    
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+            
+        }
+    
+        .projectGrid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    
+        .projectGrid .initialIMG {
+            width: 80%;
+        }
+        
+        .ProjectName:hover .extra {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .projectText {
+            margin: 0 auto;
+            gap: 0;
+        }
+
+        .contactSection {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    
+      }
+
+      @media (max-width: 858px) {
+
+
+    
+        //ABOUT 
+        .aboutText {
+            display: flex;
+            flex-direction: column;
+        
+        }    
+    
+        .aboutME {
+            margin: 0 auto;
+    
+        }
+    
+        .aboutText img {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+
+        //SKILLS
+
+        .skills ul {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        //CONTACT
+
+        form {
+            width: 85%;
+            margin:0 auto;
+        }
+
+        input {
+            width: 44%;
+        }
+        
+        
+    
+    }
+
+    @media (max-width: 768px) {
+        .skills ul {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .projectGrid .initialIMG {
+            display:none;
+        }
+        
+        .projectGrid .extra {
+            display: grid;
+            background-color: transparent;
+            text-align: left;
+        }
+
+        h3 {
+            margin-top: 20px;
+            
+    }
+}
+    
+    @media (max-width: 530px) {
+  
+        //HEADER
+      
+        .test4 {
+          font-size: 2.5rem; 
+       }
+      
+       section h2 {
+           text-align: center;
+           font-size: 2rem;
+           margin-bottom: 10px;
+       }
+      
+      //ABOUT
+       .aboutText {
+           display: flex;
+           flex-direction: column;
+       }
+    
+       .sillyIntro {
+           text-align: center;
+       }
+      
+      //PROJECTS
+      
+       h3 {
+           font-size: 1.5rem;
+           
+       }
+      
+       .projectGrid {
+           grid-template-columns: repeat(1, 450px);
+       }
+      
+       .projectGrid .initialIMG {
+           width: 100%;
+       }
+       
+       .ProjectName:hover .extra {
+           grid-template-columns: repeat(1, 1fr);
+       }
+      //CONTACT
+      
+    
+       form {
+           width: 80%;
+           margin: 0 auto;
+       }
+      
+       input {
+    
+           margin-top: 20px;
+       }
+      
+       .navBar {
+           display: none;
+       }
+      
+       .userInformation { 
+           flex-direction: column;
+           width: 203%;
+          
+       }
+      
+       .contactSection {
+           grid-template-columns: repeat(1, 1fr);
+       }
+      
+       .social-contact {
+           text-align: left;
+       }
+       .socials {
+           text-align: left;
+       }
+          
+        }
+
+
+@media (max-width: 450px) {
+//PROJECTS
+.projectGrid .initialIMG {
+    display:none;
+}
+
+.projectGrid .extra {
+    // display: grid;
+    // grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    background-color: transparent;
+    text-align: left;
+}
+
+.projectText p {
+    margin: 0;
+}
+
+h3 {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+}
+
+@media (max-width: 414px) {
+
+    .projectGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .projectGrid .extra {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+        background-color: transparent;
+        text-align: left;
+    }
+    
+}
+
+
+@media (max-width: 380px) {
 
     //HEADER
     
         .test4 {
-           font-size: 2.5rem; 
+           font-size: 2rem; 
         }
     
         section h2 {
@@ -382,28 +566,30 @@ form {
         }
     
     //ABOUT
-        .aboutText {
-            display: flex;
-            flex-direction: column;
-        }
+       
     
         .aboutME {
             text-align: center;
+           
         }
-    //SKILLS
-        .skills ul {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    
+        
+
+    //SKILLS 
+    .skills ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
     //PROJECTS
     
         h3 {
             font-size: 1.5rem;
+            margin: 0 auto;
             
         }
     
         .projectGrid {
-            grid-template-columns: repeat(1, 300px);
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0 auto;
+        
         }
     
         .projectGrid .initialIMG {
@@ -432,7 +618,7 @@ form {
         }
     
         .userInformation { 
-            flex-direction: column;
+            flex-direction: row;
         }
     
         .contactSection {
@@ -440,98 +626,20 @@ form {
         }
     
         .social-contact {
-            text-align: center;
+            text-align: left;
         }
         .socials {
-            text-align: center;
+            text-align: left;
         }
-        
        
       }
 
-  @media (max-width: 500px) {
-  
-  //HEADER
-
-  .test4 {
-    font-size: 2.5rem; 
- }
-
- section h2 {
-     text-align: center;
-     font-size: 2rem;
-     margin-bottom: 10px;
- }
-
-//ABOUT
- .aboutText {
-     display: flex;
-     flex-direction: column;
- }
-
- .aboutME {
-     text-align: center;
- }
-//SKILLS
- .skills ul {
-     grid-template-columns: repeat(3, 1fr);
- }
-
-//PROJECTS
-
- h3 {
-     font-size: 1.5rem;
-     
- }
-
- .projectGrid {
-     grid-template-columns: repeat(1, 450px);
- }
-
- .projectGrid .initialIMG {
-     width: 100%;
- }
+   
  
- .ProjectName:hover .extra {
-     grid-template-columns: repeat(1, 1fr);
- }
-//CONTACT
 
- // .spacer {
- //     display: none;
- // }
- form {
-     width: 450px;
- }
+ 
 
- input {
-     width: 421px;
-     margin-top: 20px;
- }
 
- .navBar {
-     display: none;
- }
 
- .userInformation { 
-     flex-direction: column;
- }
 
- .contactSection {
-     grid-template-columns: repeat(1, 1fr);
- }
-
- .social-contact {
-     text-align: center;
- }
- .socials {
-     text-align: center;
- }
-    
-  }
-
-  @media (max-width: 1000px) {
-      body {
-          overflow: scroll;
-      }
-  }
+      
