@@ -1167,6 +1167,7 @@ button:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 203%;
+    overflow-x: hidden;
   }
   .contactSection {
     -ms-grid-columns: (1fr)[1];
