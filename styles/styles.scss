@@ -471,6 +471,8 @@ button:hover {
        .ProjectName:hover .extra {
            grid-template-columns: repeat(1, 1fr);
        }
+
+
       //CONTACT
       
     
@@ -554,7 +556,7 @@ h3 {
 
 @media (max-width: 380px) {
 
-    section {
+    body {
         overflow-x:hidden;
     }
 
