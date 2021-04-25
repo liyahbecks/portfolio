@@ -991,6 +991,8 @@ button:hover {
   font-family: 'roboto', sans-serif;
   font-weight: 300;
   font-style: normal;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .socials i {
@@ -1004,7 +1006,7 @@ button:hover {
   margin: 10px 0;
 }
 
-.contactLink {
+.contactLink a {
   text-decoration: none;
   color: #E7E0DC;
   font-family: 'roboto', sans-serif;
@@ -1151,6 +1153,9 @@ button:hover {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
+  .contactSection div {
+    overflow: hidden;
+  }
   form {
     width: 80%;
     margin: 0 auto;
@@ -1167,7 +1172,6 @@ button:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 203%;
-    overflow-x: hidden;
   }
   .contactSection {
     -ms-grid-columns: (1fr)[1];
@@ -1207,9 +1211,6 @@ button:hover {
     font-size: 2rem;
     margin-bottom: 10px;
   }
-  .aboutME {
-    text-align: center;
-  }
   .skills ul {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -1232,6 +1233,9 @@ button:hover {
   input {
     width: 270px;
     margin-top: 20px;
+  }
+  .userInformation {
+    width: 100%;
   }
   .navBar {
     display: none;
